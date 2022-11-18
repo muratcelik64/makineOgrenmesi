@@ -156,6 +156,7 @@ model.intercept_[0]
 # model.coef_; model katsayısını eşleştir
 dict(zip(dv.get_feature_names_out(), model.coef_[0].round(3)))
 
+
 # modelin yeni veriyi tahmin etmesi
 customer = { 
     'customerid': '8879-zkjof',
