@@ -1,4 +1,4 @@
-# makineOgr2.py
+# makineOgr2.py  
 
 import pandas as pd
 
