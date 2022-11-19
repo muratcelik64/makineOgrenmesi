@@ -2,6 +2,8 @@
 
 import pandas as pd
 df = pd.read_csv("Datasets/googleplaystore.csv")
+
+# verileri gör
 df.head()
 
 # sütun isimlerini gör
