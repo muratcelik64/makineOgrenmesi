@@ -231,3 +231,4 @@ sns.heatmap(df.corr(), annot=True, linewidths=.5, fmt=".2f")
 # kde-> dağılımı düzleştirmek için, olasılık tahmin eğrisi
 # kde-> Kernel Density Estimation (Çekirdek Yoğunluğu Tahmini)
 sns.histplot(df["Rating"], kde = True)
+
