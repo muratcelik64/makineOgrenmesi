@@ -16,7 +16,6 @@ data.isnull()
 
 # eksik veri var mı
 data.isnull().sum()
-
 data.dtypes
 
 # veri tipini category tipe çevir
