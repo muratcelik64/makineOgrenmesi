@@ -76,7 +76,7 @@ data.columns
 # sonuç değişkeni y dir
 y = data["charges"] 
 
-# Not: kıçından değişken uydurma...
+# Not: değişken adı uydurma, standart olanı kullan...
 # X - girdi değişkenidir ve büyük harfle gösterilir.
 # -axis = 1 - sütun olarak çıktı alınacak
 X = data.drop("charges", axis = 1)
