@@ -2,7 +2,7 @@
 
 # pip install pycaret -> hata verirse 
 # pycaret-2.3.10.tar.gz + paketini aç, 
-#			(cmd ortamonda)  klasör içinde yaz çalıştır -> python setup.py install
+#			(cmd ortamında)  klasör içinde yaz çalıştır -> python setup.py install
 # pip install -U --pre pycaret -> yaz çalıştır
 
 import pandas as pd
@@ -11,15 +11,15 @@ df = pd.read_csv("Datasets/heart.csv")
 df.head()
 df.shape
 
-# vs. parçala
+# veri setini parçala
 data = df.sample(frac = 0.95, random_state=0)
 data.head()
 
-# vs. geri kalanını değişkene ata
+# veri setinin geri kalanını değişkene ata
 data_unseen = df.drop(data.index)
 data_unseen
 
-# vs. index i resetle
+# veri seti index i resetle
 data.reset_index(inplace=True, drop=True)
 data.head()
 
@@ -37,7 +37,7 @@ data["DEATH"].value_counts()
 # import pycaret.classification
 from pycaret.classification import *
 
-#  balans ayarını yapmak için
+# balans ayarını yapmak için
 from imblearn.over_sampling import RandomOverSampler
 
 # pycaret de veri önişleme işlemi için setup fonksiyonu kullanılır
