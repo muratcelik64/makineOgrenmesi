@@ -11,7 +11,9 @@ df.columns
 
 # veriyi analize uygun hale getir
 # sütun isimlerindeki boşlukları _ ile doldur
-df.columns = df.columns.str.replace(" ", "_")
+# df.columns = df.columns.str.replace(" ", "_")
+import sembol_list
+df.columns = sembol_list.symbol_to_character(df.columns)
 df.columns
 
 # veri setindeki satır ve sütun sayıları
