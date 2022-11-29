@@ -1,4 +1,4 @@
-#makineOgr6.py
+#makineOgr6.py   
 
 # pip install pycaret -> hata verirse 
 # pycaret-2.3.10.tar.gz + paketini aç, 
